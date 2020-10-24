@@ -25,7 +25,7 @@ export class DeletemoviebeforeyearComponent implements OnInit {
   //delete movie before a year 
   onDeleteMovieBeforeYear(){
     this.dbService.deleteMovieBeforeYear(this.year).subscribe(result => {
-    this.onGetMovies();
+    // this.onGetMovies();
     this.router.navigate(["/listmovies"]);
     });
   }
