@@ -14,7 +14,8 @@ import { AddmovieComponent } from './addmovie/addmovie.component';
 import { ListmoviesComponent } from './listmovies/listmovies.component';
 import { DeletemovieComponent } from './deletemovie/deletemovie.component';
 import { ViewnotfoundComponent } from './viewnotfound/viewnotfound.component';
-import { AddactortomovieComponent } from './addactortomovie/addactortomovie.component'
+import { AddactortomovieComponent } from './addactortomovie/addactortomovie.component';
+import { DeletemoviebeforeyearComponent } from './deletemoviebeforeyear/deletemoviebeforeyear.component'
 
 const week10Routes:Routes=[
   {path:'addactor',component:AddactorComponent},
@@ -25,6 +26,7 @@ const week10Routes:Routes=[
   {path:'deletemovie',component:DeletemovieComponent},
   {path:'addactortomovie',component:AddactortomovieComponent},
   {path:'listmovies',component:ListmoviesComponent},
+  {path:'deletemoviebeforeyear', component:DeletemoviebeforeyearComponent},
   {path:'viewnotfound',component:ViewnotfoundComponent},
   { path: "", redirectTo: "/listactors", pathMatch: "full" },
   { path: '**', redirectTo: "/viewnotfound",pathMatch: "full" }
@@ -41,7 +43,8 @@ const week10Routes:Routes=[
     ListmoviesComponent,
     DeletemovieComponent,
     ViewnotfoundComponent,
-    AddactortomovieComponent
+    AddactortomovieComponent,
+    DeletemoviebeforeyearComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,FormsModule,RouterModule.forRoot(week10Routes,{useHash:true})
